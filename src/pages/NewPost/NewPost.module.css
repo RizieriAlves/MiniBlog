@@ -1,0 +1,79 @@
+.container {
+  width: 500px;
+  height: 700px;
+  margin-top: 100px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.form input {
+  padding: 10px;
+}
+
+textarea {
+  text-align: justify;
+  font-size: 18px;
+  min-height: 200px;
+  text-wrap: wrap;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.tags {
+  width: 150px;
+  display: flex;
+  gap: 5px;
+}
+
+.tag {
+  padding: 5px;
+  display: block;
+  background-color: gray;
+  margin-right: 20px;
+  flex-wrap: nowrap;
+}
+
+.addtag {
+  margin-left: 10px;
+  padding: 10px;
+}
+.send {
+  font-size: 20px;
+  width: 100px;
+  margin-left: auto;
+}
+
+.file {
+  display: none;
+}
+
+.iconfile {
+  font-size: 2em;
+  transform: translateY(15%);
+}
+
+.tagmedia {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.labelicon {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.erro {
+  margin-top: 10px;
+  background-color: bisque;
+  padding: 10px;
+  font-size: 25px;
+  color: red;
+}

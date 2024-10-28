@@ -1,0 +1,162 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  font-size: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0px 10px;
+  right: 0;
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+  background: rgb(71, 71, 71);
+  border: 1px solid grey;
+  box-shadow: 0px 0px 5px grey;
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+}
+
+a {
+  color: azure;
+  text-decoration: none;
+  padding: 15px;
+}
+
+nav ul li:hover {
+  background-color: white;
+  transition: 1s;
+  box-shadow: 0px 0px 20px white;
+}
+
+nav ul li:hover a {
+  color: black;
+  transition: 1.5s;
+}
+
+.blog {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px white;
+  font-weight: bolder;
+}
+
+.blog:hover {
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+a:has(.blog:hover) {
+  box-shadow: 0px 0px 20px white;
+  background-color: white;
+  color: black;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.a_active {
+  box-shadow: 0px 0px 20px white;
+  background-color: white;
+  color: black;
+  transition: 1s;
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  transition: 1.5s;
+  text-decoration: none;
+  text-shadow: 0px 0px 2px black;
+}
+
+nav ul li:has(.active) {
+  background-color: white;
+  transition: 1s;
+  box-shadow: 0px 0px 20px white;
+}
+
+.central {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.central:hover .icon {
+  box-shadow: 0px 0px 10px 20px rgba(255, 255, 255, 0.651);
+  transition: 0.5s;
+}
+
+.out {
+  background-color: black;
+  color: white;
+  font-size: 26px;
+  padding: 0;
+  margin: 0;
+  top: 0;
+}
+
+.new {
+  position: absolute;
+  left: 54%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+}
+
+.home {
+  position: absolute;
+  left: 44%;
+}
+
+.newicon {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.home {
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: transparent;
+}
+
+.home:hover .newicon,
+.new:hover .newicon,
+.out:hover {
+  box-shadow: 0px 0px 10px 20px rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: 0.5s;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}

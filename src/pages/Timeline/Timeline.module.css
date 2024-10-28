@@ -1,0 +1,86 @@
+.container {
+  width: 60vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.searchform {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  gap: 10px;
+  background-color: black;
+  padding: 5px;
+}
+
+.searchform input {
+  font-size: 1.2em;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.searchform button {
+  padding: 10px;
+  border-radius: 10px;
+}
+.posts {
+  margin-top: 80px;
+  width: 60vw;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.tags {
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+  max-width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post {
+  background-color: gray;
+  width: 40vw;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 25vh;
+  justify-content: space-between;
+}
+
+.user {
+  color: white;
+  text-shadow: 0px 0px 5px white;
+}
+
+.tagdate {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nopost {
+  margin: 100px auto;
+  width: 25vw;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  height: 150px;
+  text-align: center;
+}
+
+.newpost {
+  color: black;
+  background-color: bisque;
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+}
